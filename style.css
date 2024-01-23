@@ -1,0 +1,80 @@
+/* General Body Styles */
+body {
+    background-color: #E1EFCA;
+    color: #E5D0E3;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.section {
+    background-color: #E0E3F4; 
+    color: #E5D0E3;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #A99ABD;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.section img {
+    width: 500px; 
+    height: auto; 
+    border: 10px solid #C0D8C0;
+    border-radius: 10%; 
+    margin: 40px 0; 
+}
+
+.button {
+    padding: 10px 20px; 
+    border: 2px solid #C0D8C0; 
+    background-color: #C0D8C0; 
+    color: white;
+    font-size: 16px; 
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #8e5fa2;
+    border-color: #8e5fa2;
+}
+
+
+ul, ol {
+    text-align: left;
+    color: #A99ABD;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+ul li, ol li {
+    font-size: 14px;
+    color: #A99ABD;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 500px) {
+    .centered-content {
+        height: auto;
+    }
+
+    .section img {
+        width: 300px;
+    }
+}
